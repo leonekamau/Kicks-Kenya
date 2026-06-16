@@ -724,3 +724,4 @@ img { max-width: 100%; height: auto; display: block; }
   .stats-strip .col-6 { margin-bottom: 1rem; }
 }
 :root { --primary: #E63946; }
+[data-theme=dark]{--bg:#121212}
