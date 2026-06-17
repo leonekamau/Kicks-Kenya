@@ -727,3 +727,4 @@ img { max-width: 100%; height: auto; display: block; }
 [data-theme=dark]{--bg:#121212}
 .navbar{background:#0d0d0d}
 .site-footer{background:#0d0d0d}
+.btn-kicks{background:var(--primary)}
