@@ -726,3 +726,4 @@ img { max-width: 100%; height: auto; display: block; }
 :root { --primary: #E63946; }
 [data-theme=dark]{--bg:#121212}
 .navbar{background:#0d0d0d}
+.site-footer{background:#0d0d0d}
