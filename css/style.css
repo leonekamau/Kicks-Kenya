@@ -730,3 +730,4 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-kicks{background:var(--primary)}
 .hero{background:linear-gradient(135deg,#0d0d0d,#1D3557)}
 .product-card{border-radius:12px}
+.stats-strip{background:var(--primary)}
