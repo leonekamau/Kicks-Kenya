@@ -258,3 +258,4 @@ style.textContent = `@keyframes fadeIn { from { opacity:0; transform:translateY(
 document.head.appendChild(style);
 // dark mode toggle
 // back to top
+// scroll animations
