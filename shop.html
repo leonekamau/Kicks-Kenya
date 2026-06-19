@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop All Shoes — Kicks Kenya</title>
+  <meta name="description" content="Browse all sneakers at Kicks Kenya. Filter by brand, category, and price. Nike, Adidas, New Balance and more.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">KICKS<span>KENYA</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <button id="darkModeToggle">☾ Dark</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Shop</li>
+      </ol>
+    </nav>
+    <h1>All Shoes</h1>
+    <p style="color:rgba(255,255,255,0.65); margin:0;">120+ styles in stock — all 100% authentic</p>
+  </div>
+</div>
+
+<div class="container py-4">
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="row align-items-center g-3">
+      <div class="col-12 col-md-auto">
+        <strong style="font-size:0.9rem;">Filter by brand:</strong>
+      </div>
+      <div class="col-12 col-md">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nike">Nike</button>
+        <button class="filter-btn" data-filter="adidas">Adidas</button>
+        <button class="filter-btn" data-filter="new-balance">New Balance</button>
+        <button class="filter-btn" data-filter="asics">ASICS</button>
+        <button class="filter-btn" data-filter="puma">Puma</button>
+        <button class="filter-btn" data-filter="jordan">Jordan</button>
+      </div>
+    </div>
+    <div class="row align-items-center g-3 mt-1">
+      <div class="col-12 col-md-auto">
+        <strong style="font-size:0.9rem;">Category:</strong>
+      </div>
+      <div class="col-12 col-md">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="running">Running</button>
+        <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-filter="basketball">Basketball</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+      </div>
+      <div class="col-12 col-md-4">
+        <label class="form-label mb-1" style="font-size:0.85rem;">Max price: <strong id="priceDisplay">KES 25,000</strong></label>
+        <input type="range" class="form-range" id="priceRange" min="5000" max="25000" step="500" value="25000">
+      </div>
+    </div>
+    <div class="mt-2" style="font-size:0.85rem; color:var(--text-muted);">
+      <span id="productCount">12 shoes found</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <div class="row g-4" id="productGrid">
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="lifestyle" data-brand="nike" data-price="14500">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-name">Air Max 270</div>
+            <div class="product-brand">NIKE</div>
+            <div class="product-price">KES 14,500</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="running" data-brand="adidas" data-price="18200">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e8e8f0,#d0d0e0);">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-popular">Popular</span>
+            <div class="product-name">Ultraboost 22</div>
+            <div class="product-brand">ADIDAS</div>
+            <div class="product-price">KES 18,200 <span class="old-price">KES 21,000</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="running" data-brand="new-balance" data-price="12800">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#f0e8e8,#e0d0d0);">🥿</div>
+          <div class="card-body">
+            <span class="product-badge badge-sale">Sale</span>
+            <div class="product-name">Fresh Foam X 1080</div>
+            <div class="product-brand">NEW BALANCE</div>
+            <div class="product-price">KES 12,800 <span class="old-price">KES 15,500</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="running" data-brand="asics" data-price="16900">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e8f0e8,#d0e0d0);">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-name">Gel-Nimbus 25</div>
+            <div class="product-brand">ASICS</div>
+            <div class="product-price">KES 16,900</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="basketball" data-brand="jordan" data-price="22500">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#fff0e0,#ffe0c0);">🏀</div>
+          <div class="card-body">
+            <span class="product-badge badge-popular">Popular</span>
+            <div class="product-name">Air Jordan 1 Mid</div>
+            <div class="product-brand">JORDAN</div>
+            <div class="product-price">KES 22,500</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="lifestyle" data-brand="adidas" data-price="9500">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e0e8f0,#c0d0e0);">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-sale">Sale</span>
+            <div class="product-name">Stan Smith OG</div>
+            <div class="product-brand">ADIDAS</div>
+            <div class="product-price">KES 9,500 <span class="old-price">KES 12,000</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="training" data-brand="nike" data-price="11200">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#f0f0e8,#e0e0c0);">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-name">React Infinity Run</div>
+            <div class="product-brand">NIKE</div>
+            <div class="product-price">KES 11,200</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="lifestyle" data-brand="puma" data-price="7800">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#f0e8f0,#e0c0e0);">👟</div>
+          <div class="card-body">
+            <div class="product-name">Suede Classic XXI</div>
+            <div class="product-brand">PUMA</div>
+            <div class="product-price">KES 7,800</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="running" data-brand="nike" data-price="15600">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e8e8e8,#d0d0d0);">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-popular">Popular</span>
+            <div class="product-name">Pegasus 40</div>
+            <div class="product-brand">NIKE</div>
+            <div class="product-price">KES 15,600</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="basketball" data-brand="nike" data-price="19800">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#ffe8e8,#ffcece);">👟</div>
+          <div class="card-body">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-name">KD 16</div>
+            <div class="product-brand">NIKE</div>
+            <div class="product-price">KES 19,800</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="training" data-brand="adidas" data-price="13400">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e8f0f8,#c0d8f0);">👟</div>
+          <div class="card-body">
+            <div class="product-name">Dropset 2 Trainer</div>
+            <div class="product-brand">ADIDAS</div>
+            <div class="product-price">KES 13,400</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 product-item" data-category="lifestyle" data-brand="new-balance" data-price="10200">
+      <a href="product.html" class="text-decoration-none">
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background:linear-gradient(135deg,#f8f0e8,#f0e0c8);">🥿</div>
+          <div class="card-body">
+            <span class="product-badge badge-sale">Sale</span>
+            <div class="product-name">574 Core</div>
+            <div class="product-brand">NEW BALANCE</div>
+            <div class="product-price">KES 10,200 <span class="old-price">KES 13,000</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div><!-- /row -->
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="footer-brand">KICKS<span>KENYA</span></div>
+        <p style="font-size:0.88rem; color:rgba(255,255,255,0.55); margin-bottom:1rem;">Nairobi's premier destination for authentic sneakers since 2019.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="X/Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5>Shop</h5>
+        <a href="shop.html">All Shoes</a>
+        <a href="shop.html?cat=running">Running</a>
+        <a href="shop.html?cat=lifestyle">Lifestyle</a>
+        <a href="shop.html?cat=basketball">Basketball</a>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p style="font-size:0.88rem;"><i class="bi bi-geo-alt me-1" style="color:var(--primary);"></i> Sarit Centre, Westlands, Nairobi</p>
+        <p style="font-size:0.88rem;"><i class="bi bi-telephone me-1" style="color:var(--primary);"></i> +254 712 345 678</p>
+        <p style="font-size:0.88rem;"><i class="bi bi-envelope me-1" style="color:var(--primary);"></i> hello@kickskenya.co.ke</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">&copy; 2026 Kicks Kenya. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
