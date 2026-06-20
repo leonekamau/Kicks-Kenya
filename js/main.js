@@ -260,3 +260,4 @@ document.head.appendChild(style);
 // back to top
 // scroll animations
 // product filter
+// price slider
