@@ -259,3 +259,4 @@ document.head.appendChild(style);
 // dark mode toggle
 // back to top
 // scroll animations
+// product filter
