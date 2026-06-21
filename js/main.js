@@ -261,3 +261,4 @@ document.head.appendChild(style);
 // scroll animations
 // product filter
 // price slider
+// contact form validation
