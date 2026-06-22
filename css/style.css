@@ -732,3 +732,4 @@ img { max-width: 100%; height: auto; display: block; }
 .product-card{border-radius:12px}
 .stats-strip{background:var(--primary)}
 .form-control{border:1.5px solid var(--border)}
+.size-btn{border-radius:6px}
