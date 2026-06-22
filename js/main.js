@@ -262,3 +262,4 @@ document.head.appendChild(style);
 // product filter
 // price slider
 // contact form validation
+// size selector + qty + cart toast
