@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneaker Blog — Kicks Kenya</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">KICKS<span>KENYA</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2"><button id="darkModeToggle">☾ Dark</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb mb-2">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">Blog</li>
+    </ol></nav>
+    <h1>The Kicks Blog</h1>
+    <p style="color:rgba(255,255,255,0.65); margin:0;">Sneaker news, culture, and style from Nairobi's streets</p>
+  </div>
+</div>
+
+<div class="container py-5">
+  <!-- FEATURED POST -->
+  <div class="row g-4 mb-5 align-items-stretch">
+    <div class="col-lg-7">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#1D3557,#E63946); height:280px; font-size:5rem;">👟</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Featured · Sneaker Culture</div>
+          <div class="blog-title" style="font-size:1.6rem;">Why Nairobi Is Becoming Africa's Sneaker Capital</div>
+          <p class="blog-excerpt">From the streets of Gikomba to the boutiques of Westlands, sneaker culture in Kenya has exploded over the last five years. We break down what's driving the revolution and where it's heading next.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Kevin Odhiambo · <i class="bi bi-calendar3 ms-2 me-1"></i> June 10, 2026 · 8 min read</div>
+          <a href="#" class="btn-kicks mt-3 d-inline-block">Read Article →</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <!-- Side posts -->
+      <div class="blog-card mb-3">
+        <div class="d-flex">
+          <div class="blog-card-img" style="width:100px; min-width:100px; height:100px; font-size:2.5rem; background:linear-gradient(135deg,#e8e8f0,#c0c0e0);">👟</div>
+          <div class="blog-card-body py-2 px-3">
+            <div class="blog-category">Authentication</div>
+            <div class="blog-title" style="font-size:1rem;">How to Spot a Fake Air Jordan in 60 Seconds</div>
+            <div class="blog-meta"><i class="bi bi-calendar3 me-1"></i> June 5, 2026 · 5 min</div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card mb-3">
+        <div class="d-flex">
+          <div class="blog-card-img" style="width:100px; min-width:100px; height:100px; font-size:2.5rem; background:linear-gradient(135deg,#f0e8e0,#e0c8a0);">🏃</div>
+          <div class="blog-card-body py-2 px-3">
+            <div class="blog-category">Running</div>
+            <div class="blog-title" style="font-size:1rem;">Best Running Shoes for Nairobi's Altitude Training</div>
+            <div class="blog-meta"><i class="bi bi-calendar3 me-1"></i> May 28, 2026 · 6 min</div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="d-flex">
+          <div class="blog-card-img" style="width:100px; min-width:100px; height:100px; font-size:2.5rem; background:linear-gradient(135deg,#e0f0e0,#a0d0a0);">🛒</div>
+          <div class="blog-card-body py-2 px-3">
+            <div class="blog-category">Buying Guide</div>
+            <div class="blog-title" style="font-size:1rem;">2026 Mid-Year: The 10 Best Value Sneakers Under KES 15k</div>
+            <div class="blog-meta"><i class="bi bi-calendar3 me-1"></i> May 20, 2026 · 4 min</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALL POSTS -->
+  <h3 class="section-title mb-4">Latest <span>Posts</span></h3>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4 animate-up">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0d0d0d,#1D3557); font-size:3rem;">🏀</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Basketball</div>
+          <div class="blog-title">Air Jordan 1 Mid vs High — Which Should You Buy in 2026?</div>
+          <p class="blog-excerpt">The eternal debate for Nairobi ballers. We compared comfort, price, and street style on both — and here's our verdict.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Dennis Mutua · June 3, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 animate-up" style="transition-delay:0.1s">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#e8f0f8,#c0d8f0); font-size:3rem;">✨</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Care Guide</div>
+          <div class="blog-title">How to Clean White Sneakers with Kenyan Home Products</div>
+          <p class="blog-excerpt">No fancy cleaning kits needed. We tested Omo, Jik, and toothpaste on scuffed Adidas Stan Smiths. The results surprised us.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Sharon Chebet · May 25, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 animate-up" style="transition-delay:0.2s">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#f8e8e8,#f0c0c0); font-size:3rem;">📦</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Unboxing</div>
+          <div class="blog-title">Unboxing: Nike Pegasus 40 — Kenya's Most Popular Running Shoe</div>
+          <p class="blog-excerpt">We got 48 pairs of the Peg 40 in stock and went hands-on. Everything from lace texture to sole grip — reviewed for Kenyan runners.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Kevin Odhiambo · May 18, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 animate-up">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#f0f8e0,#d0e8a0); font-size:3rem;">🌍</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Community</div>
+          <div class="blog-title">Inside Nairobi Sneakerhead Meet-Up 2026 — Recap</div>
+          <p class="blog-excerpt">Over 300 people turned up to Wilson Airport Road for Nairobi's biggest sneaker meetup. We documented the rarest pairs, the best fits, and the conversations that matter.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Aisha Njoroge · May 12, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 animate-up" style="transition-delay:0.1s">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#f8f0d0,#f0e090); font-size:3rem;">💰</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Finance</div>
+          <div class="blog-title">Buying Sneakers on a Budget in Kenya: A Practical Guide</div>
+          <p class="blog-excerpt">Not everyone has 20k to spend on kicks. We break down the best authenticated sneakers under KES 10,000 that still look fresh.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Sharon Chebet · May 5, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 animate-up" style="transition-delay:0.2s">
+      <div class="blog-card h-100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#e8e0f8,#c8b0f0); font-size:3rem;">📱</div>
+        <div class="blog-card-body">
+          <div class="blog-category">Technology</div>
+          <div class="blog-title">How We Use AI to Authenticate Sneakers at Kicks Kenya</div>
+          <p class="blog-excerpt">Our authentication process has evolved. Here's how our team combines manual inspection with Legit Check App and StockX data to ensure every pair is genuine.</p>
+          <div class="blog-meta"><i class="bi bi-person me-1"></i> Dennis Mutua · Apr 28, 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="card-custom text-center py-5 mt-5" style="background:var(--secondary); color:#fff; border:none;">
+    <h3 style="font-family:var(--font-head); font-size:1.8rem; font-weight:800; text-transform:uppercase;">Never Miss a Drop or Article</h3>
+    <p style="color:rgba(255,255,255,0.65); margin-bottom:1.5rem;">Weekly sneaker news + exclusive Kicks Kenya deals, straight to your inbox.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="your@email.com" style="border:none;">
+          <button class="btn-kicks" style="border-radius:0 6px 6px 0;">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4"><div class="footer-brand">KICKS<span>KENYA</span></div><p style="font-size:0.88rem; color:rgba(255,255,255,0.55);">Nairobi's premier destination for authentic sneakers since 2019.</p></div>
+      <div class="col-6 col-md-2"><h5>Shop</h5><a href="shop.html">All Shoes</a><a href="shop.html?cat=running">Running</a><a href="shop.html?cat=lifestyle">Lifestyle</a></div>
+      <div class="col-6 col-md-2"><h5>Company</h5><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="col-md-4"><h5>Contact</h5><p style="font-size:0.88rem;"><i class="bi bi-telephone me-1" style="color:var(--primary);"></i> +254 712 345 678</p><p style="font-size:0.88rem;"><i class="bi bi-envelope me-1" style="color:var(--primary);"></i> hello@kickskenya.co.ke</p></div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">&copy; 2026 Kicks Kenya. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
