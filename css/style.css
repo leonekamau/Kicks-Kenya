@@ -734,3 +734,4 @@ img { max-width: 100%; height: auto; display: block; }
 .form-control{border:1.5px solid var(--border)}
 .size-btn{border-radius:6px}
 .filter-btn{border-radius:20px}
+@media(max-width:768px){.hero{padding:70px 0 60px}}
