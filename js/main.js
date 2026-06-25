@@ -263,3 +263,4 @@ document.head.appendChild(style);
 // price slider
 // contact form validation
 // size selector + qty + cart toast
+// gallery thumbnails
