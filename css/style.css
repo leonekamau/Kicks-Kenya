@@ -723,3 +723,4 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-title { font-size: 3rem; }
   .stats-strip .col-6 { margin-bottom: 1rem; }
 }
+.footer-divider{border-color:rgba(255,255,255,0.1)}
