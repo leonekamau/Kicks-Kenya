@@ -726,3 +726,4 @@ img { max-width: 100%; height: auto; display: block; }
 .footer-divider{border-color:rgba(255,255,255,0.1)}
 .card-custom{background:var(--card-bg,#fff);border:1px solid var(--border,#e0e0e0);border-radius:12px;padding:1.8rem}
 [data-theme=dark] .form-control{background:#1e1e1e;color:#f0f0f0;border-color:#2e2e2e}
+.team-card{text-align:center}.team-avatar{width:90px;height:90px;border-radius:50%;background:var(--secondary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1rem}
