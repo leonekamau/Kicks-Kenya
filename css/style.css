@@ -724,3 +724,4 @@ img { max-width: 100%; height: auto; display: block; }
   .stats-strip .col-6 { margin-bottom: 1rem; }
 }
 .footer-divider{border-color:rgba(255,255,255,0.1)}
+.card-custom{background:var(--card-bg,#fff);border:1px solid var(--border,#e0e0e0);border-radius:12px;padding:1.8rem}
