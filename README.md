@@ -2,8 +2,8 @@
 
 **Kenya's premier online sneaker destination** — a fully responsive multi-page web application built with HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5.
 
-🌐 **Live site:** [GitHub Pages link here]  
-📁 **Repository:** [Your GitHub repo URL here]
+🌐 **Live site:** [https://leonekamau.github.io/Kicks-Kenya]  
+📁 **Repository:** [https://github.com/leonekamau/Kicks-Kenya]
 
 ---
 
@@ -126,6 +126,6 @@ No build tools needed — open `index.html` directly in your browser, or use VS 
 
 ## Author
 
-**[Your Name]**  
+**[Leone Kamau]**  
 Web Application Development — 2026  
 Kicks Kenya is a fictional Nairobi shoe shop created for coursework purposes.
