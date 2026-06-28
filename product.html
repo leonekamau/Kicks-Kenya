@@ -4,69 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nike Air Max 270 — Kicks Kenya</title>
-  <meta name="description" content="Buy the Nike Air Max 270 in Kenya. Available in sizes EU 38–47. KES 14,500. Authentic with warranty.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/images.css">
   <style>
-    .thumb-img {
-      width: 70px;
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      border-radius: 8px;
-      border: 2px solid var(--border);
-      cursor: pointer;
-      transition: border-color 0.2s;
-      background: var(--card-bg);
-    }
-    .thumb-img.active,
-    .thumb-img:hover { border-color: var(--primary); }
-    .main-product-img {
-      height: 380px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9rem;
-      background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
-      border-radius: var(--radius);
-    }
-    [data-theme="dark"] .main-product-img {
-      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
-    }
-    #cartToast {
-      display: none;
-      position: fixed;
-      bottom: 6rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #1D3557;
-      color: #fff;
-      padding: 0.8rem 2rem;
-      border-radius: 30px;
-      align-items: center;
-      gap: 0.8rem;
-      z-index: 1000;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-      font-weight: 500;
-      white-space: nowrap;
-    }
+    #cartToast{display:none;position:fixed;bottom:6rem;left:50%;transform:translateX(-50%);background:#1D3557;color:#fff;padding:0.8rem 2rem;border-radius:30px;align-items:center;gap:0.8rem;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.25);font-weight:500;white-space:nowrap;}
   </style>
 </head>
 <body>
-
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="index.html">KICKS<span>KENYA</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -76,16 +29,13 @@
         <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item ms-lg-2">
-          <button id="darkModeToggle">☾ Dark</button>
-        </li>
+        <li class="nav-item ms-lg-2"><button id="darkModeToggle">☾ Dark</button></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container py-4">
-  <!-- BREADCRUMB -->
   <nav aria-label="breadcrumb" class="mb-4">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html" style="color:var(--primary);">Home</a></li>
@@ -95,100 +45,65 @@
   </nav>
 
   <div class="row g-5">
-    <!-- IMAGES -->
     <div class="col-lg-6">
-      <div class="main-product-img mb-3">
-        <span id="mainProductImg">👟</span>
-      </div>
+      <img id="mainProductImg" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=80" alt="Nike Air Max 270" class="product-main-img mb-3">
       <div class="d-flex gap-2">
-        <div class="thumb-img active" data-emoji="👟">👟</div>
-        <div class="thumb-img" data-emoji="🥿">🥿</div>
-        <div class="thumb-img" data-emoji="👞">👞</div>
-        <div class="thumb-img" data-emoji="👟">👟</div>
+        <img class="thumb-img-real active" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=150&q=80" alt="View 1" data-src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=80">
+        <img class="thumb-img-real" src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=150&q=80" alt="View 2" data-src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=700&q=80">
+        <img class="thumb-img-real" src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=150&q=80" alt="View 3" data-src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=700&q=80">
+        <img class="thumb-img-real" src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=150&q=80" alt="View 4" data-src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=700&q=80">
       </div>
     </div>
 
-    <!-- PRODUCT INFO -->
     <div class="col-lg-6">
-      <p class="hero-badge d-inline-block" style="background:var(--secondary); margin-bottom:0.8rem;">NIKE</p>
-      <h1 style="font-family:var(--font-head); font-size:2.4rem; font-weight:800; text-transform:uppercase; margin-bottom:0.5rem;">Air Max 270</h1>
-      <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">
-        <span style="color:#f4a261;">★★★★★</span> 4.8 (124 reviews) ·
-        <a href="#reviews" style="color:var(--primary);">See all reviews</a>
-      </div>
-      <div style="font-family:var(--font-head); font-size:2rem; font-weight:800; color:var(--primary); margin-bottom:0.3rem;">KES 14,500</div>
-      <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:1.5rem;">
-        <i class="bi bi-shield-check" style="color:#25a244;"></i> Authentic — includes original box, tag & warranty card
-      </p>
+      <p class="hero-badge d-inline-block" style="background:var(--secondary);margin-bottom:0.8rem;">NIKE</p>
+      <h1 style="font-family:var(--font-head);font-size:2.4rem;font-weight:800;text-transform:uppercase;margin-bottom:0.5rem;">Air Max 270</h1>
+      <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1rem;"><span style="color:#f4a261;">★★★★★</span> 4.8 (124 reviews) · <a href="#reviews" style="color:var(--primary);">See all reviews</a></div>
+      <div style="font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--primary);margin-bottom:0.3rem;">KES 14,500</div>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1.5rem;"><i class="bi bi-shield-check" style="color:#25a244;"></i> Authentic — includes original box, tag & warranty card</p>
 
       <div class="mb-3">
-        <label style="font-weight:700; font-size:0.9rem; display:block; margin-bottom:0.6rem;">
-          Colour: <span style="font-weight:400;">Black / White / Red</span>
-        </label>
+        <label style="font-weight:700;font-size:0.9rem;display:block;margin-bottom:0.6rem;">Colour: <span style="font-weight:400;">Black / White / Red</span></label>
         <div class="d-flex gap-2">
-          <div style="width:28px;height:28px;border-radius:50%;background:#111;border:2px solid var(--primary);cursor:pointer;" title="Black"></div>
-          <div style="width:28px;height:28px;border-radius:50%;background:#f5f5f5;border:1.5px solid var(--border);cursor:pointer;" title="White"></div>
-          <div style="width:28px;height:28px;border-radius:50%;background:#1D3557;border:1.5px solid var(--border);cursor:pointer;" title="Navy"></div>
+          <div style="width:28px;height:28px;border-radius:50%;background:#111;border:2px solid var(--primary);cursor:pointer;"></div>
+          <div style="width:28px;height:28px;border-radius:50%;background:#f5f5f5;border:1.5px solid var(--border);cursor:pointer;"></div>
+          <div style="width:28px;height:28px;border-radius:50%;background:#1D3557;border:1.5px solid var(--border);cursor:pointer;"></div>
         </div>
       </div>
 
       <div class="mb-3">
-        <label style="font-weight:700; font-size:0.9rem; display:block; margin-bottom:0.6rem;">
-          Size (EU): <a href="#" style="color:var(--primary); font-size:0.8rem; font-weight:400;">Size guide</a>
-        </label>
+        <label style="font-weight:700;font-size:0.9rem;display:block;margin-bottom:0.6rem;">Size (EU): <a href="#" style="color:var(--primary);font-size:0.8rem;font-weight:400;">Size guide</a></label>
         <div class="d-flex flex-wrap gap-2">
-          <button class="size-btn">38</button>
-          <button class="size-btn">39</button>
-          <button class="size-btn">40</button>
-          <button class="size-btn">41</button>
-          <button class="size-btn">42</button>
-          <button class="size-btn">43</button>
-          <button class="size-btn">44</button>
-          <button class="size-btn" disabled style="opacity:0.3;cursor:not-allowed;" title="Out of stock">45</button>
-          <button class="size-btn">46</button>
-          <button class="size-btn">47</button>
+          <button class="size-btn">38</button><button class="size-btn">39</button><button class="size-btn">40</button><button class="size-btn">41</button><button class="size-btn">42</button><button class="size-btn">43</button><button class="size-btn">44</button><button class="size-btn" disabled style="opacity:0.3;cursor:not-allowed;">45</button><button class="size-btn">46</button><button class="size-btn">47</button>
         </div>
-        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.5rem;">
-          <i class="bi bi-info-circle"></i> Sizes run true to EU standard
-        </p>
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;"><i class="bi bi-info-circle"></i> Sizes run true to EU standard</p>
       </div>
 
       <div class="d-flex align-items-center gap-3 mb-4">
-        <label style="font-weight:700; font-size:0.9rem;">Qty:</label>
+        <label style="font-weight:700;font-size:0.9rem;">Qty:</label>
         <div class="d-flex align-items-center gap-2">
           <button id="qtyMinus" class="size-btn">−</button>
-          <span id="qtyVal" style="font-weight:700; font-size:1.1rem; min-width:2rem; text-align:center;">1</span>
+          <span id="qtyVal" style="font-weight:700;font-size:1.1rem;min-width:2rem;text-align:center;">1</span>
           <button id="qtyPlus" class="size-btn">+</button>
         </div>
       </div>
 
       <div class="d-flex gap-3 flex-wrap mb-4">
-        <button id="addToCartBtn" class="btn-kicks flex-grow-1" style="font-size:1.05rem; padding:0.8rem;">
-          <i class="bi bi-bag-plus me-2"></i>Add to Cart
-        </button>
-        <button class="btn-outline-kicks" aria-label="Wishlist">
-          <i class="bi bi-heart"></i>
-        </button>
+        <button id="addToCartBtn" class="btn-kicks flex-grow-1" style="font-size:1.05rem;padding:0.8rem;"><i class="bi bi-bag-plus me-2"></i>Add to Cart</button>
+        <button class="btn-outline-kicks" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
       </div>
 
-      <!-- Payment badges -->
       <div class="card-custom p-3">
         <div class="d-flex flex-wrap gap-3 align-items-center">
-          <div style="font-size:0.82rem; color:var(--text-muted);">
-            <i class="bi bi-phone me-1" style="color:var(--primary);"></i> M-Pesa Till: <strong>4001234</strong>
-          </div>
-          <div style="font-size:0.82rem; color:var(--text-muted);">
-            <i class="bi bi-credit-card me-1" style="color:var(--primary);"></i> Visa / Mastercard
-          </div>
-          <div style="font-size:0.82rem; color:var(--text-muted);">
-            <i class="bi bi-truck me-1" style="color:var(--primary);"></i> Same-day Nairobi
-          </div>
+          <div style="font-size:0.82rem;color:var(--text-muted);"><i class="bi bi-phone me-1" style="color:var(--primary);"></i>M-Pesa Till: <strong>4001234</strong></div>
+          <div style="font-size:0.82rem;color:var(--text-muted);"><i class="bi bi-credit-card me-1" style="color:var(--primary);"></i>Visa / Mastercard</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);"><i class="bi bi-truck me-1" style="color:var(--primary);"></i>Same-day Nairobi</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- PRODUCT DETAILS TABS -->
+  <!-- TABS -->
   <div class="mt-5">
     <ul class="nav nav-tabs" id="productTabs" role="tablist">
       <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#details">Details</button></li>
@@ -197,193 +112,75 @@
     </ul>
     <div class="tab-content p-4 card-custom border-top-0" style="border-radius:0 0 var(--radius) var(--radius);">
       <div class="tab-pane fade show active" id="details">
-        <h5 style="font-family:var(--font-head); font-weight:700; margin-bottom:1rem;">Nike Air Max 270 — Product Details</h5>
-        <p style="color:var(--text-muted);">The Nike Air Max 270 delivers an all-day comfort experience with the tallest Air unit in Nike history — a full 32mm of cushioning. The design is inspired by the Air Max 180 and Air Max 93, blending heritage with modern comfort engineering.</p>
-        <ul style="color:var(--text-muted); margin-top:1rem; padding-left:1.2rem;">
+        <h5 style="font-family:var(--font-head);font-weight:700;margin-bottom:1rem;">Nike Air Max 270 — Product Details</h5>
+        <p style="color:var(--text-muted);">The Nike Air Max 270 delivers an all-day comfort experience with the tallest Air unit in Nike history — a full 32mm of cushioning. Inspired by the Air Max 180 and Air Max 93.</p>
+        <ul style="color:var(--text-muted);margin-top:1rem;padding-left:1.2rem;">
           <li>Upper: Engineered mesh with synthetic overlays</li>
           <li>Midsole: Air-Sole unit with Max Air heel cushioning (32mm)</li>
           <li>Outsole: Rubber with flex grooves for natural movement</li>
-          <li>Weight: Approximately 320g (EU 42)</li>
-          <li>Drop: 10mm</li>
+          <li>Weight: Approximately 320g (EU 42) · Drop: 10mm</li>
           <li>Fits true to EU sizing</li>
         </ul>
-        <div class="row mt-3">
-          <div class="col-sm-6">
-            <table class="table table-sm" style="font-size:0.88rem; color:var(--text-muted);">
-              <tr><td><strong>Brand</strong></td><td>Nike</td></tr>
-              <tr><td><strong>Model</strong></td><td>Air Max 270</td></tr>
-              <tr><td><strong>Category</strong></td><td>Lifestyle</td></tr>
-              <tr><td><strong>Gender</strong></td><td>Unisex</td></tr>
-              <tr><td><strong>SKU</strong></td><td>AH8050-002</td></tr>
-            </table>
-          </div>
-        </div>
       </div>
       <div class="tab-pane fade" id="delivery">
-        <h5 style="font-family:var(--font-head); font-weight:700; margin-bottom:1rem;">Delivery Information</h5>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="d-flex gap-3">
-              <div class="contact-icon"><i class="bi bi-truck"></i></div>
-              <div>
-                <h6>Nairobi Same-Day</h6>
-                <p style="color:var(--text-muted); font-size:0.88rem;">Order before 12pm Monday–Saturday. Delivered within 3–5 hours. Cost: KES 250.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex gap-3">
-              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-              <div>
-                <h6>Countrywide (1–3 days)</h6>
-                <p style="color:var(--text-muted); font-size:0.88rem;">We deliver to all 47 counties via G4S and Wells Fargo courier. Cost: KES 400–600 depending on location.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex gap-3">
-              <div class="contact-icon"><i class="bi bi-arrow-counterclockwise"></i></div>
-              <div>
-                <h6>Returns & Exchanges</h6>
-                <p style="color:var(--text-muted); font-size:0.88rem;">Wrong size? Return the unworn pair in its original box within 7 days for a free exchange. No questions asked.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex gap-3">
-              <div class="contact-icon"><i class="bi bi-shop"></i></div>
-              <div>
-                <h6>Pick Up In-Store</h6>
-                <p style="color:var(--text-muted); font-size:0.88rem;">Collect from our Westlands store (Sarit Centre, Ground Floor) — free, ready within 2 hours of order.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h5 style="font-family:var(--font-head);font-weight:700;margin-bottom:1rem;">Delivery Information</h5>
+        <p style="color:var(--text-muted);">Same-day delivery in Nairobi (order before 12pm) — KES 250. Countrywide delivery 1–3 days via G4S — KES 400–600. Free in-store pickup from Sarit Centre, Westlands. 7-day exchange policy on unworn shoes in original box.</p>
       </div>
       <div class="tab-pane fade" id="reviews">
-        <h5 style="font-family:var(--font-head); font-weight:700; margin-bottom:1.5rem;">Customer Reviews (124)</h5>
-        <div class="mb-4" style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
-          <div style="text-align:center;">
-            <div style="font-size:3rem; font-weight:800; font-family:var(--font-head); color:var(--primary);">4.8</div>
-            <div style="color:#f4a261; font-size:1.2rem;">★★★★★</div>
-            <div style="font-size:0.8rem; color:var(--text-muted);">124 ratings</div>
-          </div>
-          <div style="flex:1; min-width:200px;">
-            <div class="d-flex align-items-center gap-2 mb-1"><span style="font-size:0.8rem; width:30px;">5★</span><div style="flex:1; height:8px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="width:78%; height:100%; background:#f4a261; border-radius:4px;"></div></div><span style="font-size:0.8rem; width:30px;">97</span></div>
-            <div class="d-flex align-items-center gap-2 mb-1"><span style="font-size:0.8rem; width:30px;">4★</span><div style="flex:1; height:8px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="width:16%; height:100%; background:#f4a261; border-radius:4px;"></div></div><span style="font-size:0.8rem; width:30px;">20</span></div>
-            <div class="d-flex align-items-center gap-2 mb-1"><span style="font-size:0.8rem; width:30px;">3★</span><div style="flex:1; height:8px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="width:4%; height:100%; background:#f4a261; border-radius:4px;"></div></div><span style="font-size:0.8rem; width:30px;">5</span></div>
-            <div class="d-flex align-items-center gap-2 mb-1"><span style="font-size:0.8rem; width:30px;">2★</span><div style="flex:1; height:8px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="width:1%; height:100%; background:#f4a261; border-radius:4px;"></div></div><span style="font-size:0.8rem; width:30px;">1</span></div>
-            <div class="d-flex align-items-center gap-2"><span style="font-size:0.8rem; width:30px;">1★</span><div style="flex:1; height:8px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="width:1%; height:100%; background:#f4a261; border-radius:4px;"></div></div><span style="font-size:0.8rem; width:30px;">1</span></div>
-          </div>
-        </div>
-        <!-- Sample reviews -->
+        <h5 style="font-family:var(--font-head);font-weight:700;margin-bottom:1rem;">Customer Reviews (124)</h5>
         <div class="mb-3 pb-3" style="border-bottom:1px solid var(--border);">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="d-flex gap-2 align-items-center mb-1">
-              <div class="avatar-circle" style="width:36px; height:36px; font-size:0.85rem;">JM</div>
-              <strong style="font-size:0.9rem;">James Mwangi</strong>
-            </div>
-            <span style="font-size:0.78rem; color:var(--text-muted);">2 weeks ago</span>
-          </div>
-          <div style="color:#f4a261; font-size:0.9rem;">★★★★★</div>
-          <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.4rem;">Great shoe! Super comfortable and the air unit really makes a difference for all-day walking. Delivered fast to South B.</p>
+          <div class="d-flex gap-2 align-items-center mb-1"><div class="avatar-circle" style="width:36px;height:36px;font-size:0.85rem;">JM</div><strong style="font-size:0.9rem;">James Mwangi</strong><span style="font-size:0.78rem;color:var(--text-muted);margin-left:auto;">2 weeks ago</span></div>
+          <div style="color:#f4a261;font-size:0.9rem;">★★★★★</div>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-top:0.4rem;">Super comfortable and the air unit really makes a difference. Delivered fast to South B.</p>
         </div>
         <div class="mb-3 pb-3" style="border-bottom:1px solid var(--border);">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="d-flex gap-2 align-items-center mb-1">
-              <div class="avatar-circle" style="width:36px; height:36px; font-size:0.85rem; background:var(--secondary);">FO</div>
-              <strong style="font-size:0.9rem;">Faith Otieno</strong>
-            </div>
-            <span style="font-size:0.78rem; color:var(--text-muted);">1 month ago</span>
-          </div>
-          <div style="color:#f4a261; font-size:0.9rem;">★★★★★</div>
-          <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.4rem;">Bought this as a gift and my husband loves it. Size 43 fits perfectly — I was nervous ordering online but it was exactly right.</p>
+          <div class="d-flex gap-2 align-items-center mb-1"><div class="avatar-circle" style="width:36px;height:36px;font-size:0.85rem;background:var(--secondary);">FO</div><strong style="font-size:0.9rem;">Faith Otieno</strong><span style="font-size:0.78rem;color:var(--text-muted);margin-left:auto;">1 month ago</span></div>
+          <div style="color:#f4a261;font-size:0.9rem;">★★★★★</div>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-top:0.4rem;">Bought as a gift and my husband loves it. Size 43 fits perfectly — right on EU standard.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- RELATED PRODUCTS -->
+  <!-- RELATED -->
   <div class="mt-5">
     <h3 class="section-title">You May Also <span>Like</span></h3>
     <div class="row g-4">
-      <div class="col-sm-6 col-md-3">
-        <a href="product.html" class="text-decoration-none">
-          <div class="product-card">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e8e8f0,#d0d0e0);">👟</div>
-            <div class="card-body">
-              <div class="product-name">Ultraboost 22</div>
-              <div class="product-brand">ADIDAS</div>
-              <div class="product-price">KES 18,200</div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <a href="product.html" class="text-decoration-none">
-          <div class="product-card">
-            <div class="product-img-placeholder">👟</div>
-            <div class="card-body">
-              <div class="product-name">Pegasus 40</div>
-              <div class="product-brand">NIKE</div>
-              <div class="product-price">KES 15,600</div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <a href="product.html" class="text-decoration-none">
-          <div class="product-card">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#f0e8e8,#e0d0d0);">🥿</div>
-            <div class="card-body">
-              <div class="product-name">Fresh Foam 1080</div>
-              <div class="product-brand">NEW BALANCE</div>
-              <div class="product-price">KES 12,800</div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <a href="product.html" class="text-decoration-none">
-          <div class="product-card">
-            <div class="product-img-placeholder" style="background:linear-gradient(135deg,#e8f0e8,#d0e0d0);">👟</div>
-            <div class="card-body">
-              <div class="product-name">Gel-Nimbus 25</div>
-              <div class="product-brand">ASICS</div>
-              <div class="product-price">KES 16,900</div>
-            </div>
-          </div>
-        </a>
-      </div>
+      <div class="col-sm-6 col-md-3"><a href="product.html" class="text-decoration-none"><div class="product-card"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80" alt="Ultraboost" class="product-img-real"></div><div class="card-body"><div class="product-name">Ultraboost 22</div><div class="product-brand">ADIDAS</div><div class="product-price">KES 18,200</div></div></div></a></div>
+      <div class="col-sm-6 col-md-3"><a href="product.html" class="text-decoration-none"><div class="product-card"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1578432014316-48b448d79d57?w=400&q=80" alt="Pegasus" class="product-img-real"></div><div class="card-body"><div class="product-name">Pegasus 40</div><div class="product-brand">NIKE</div><div class="product-price">KES 15,600</div></div></div></a></div>
+      <div class="col-sm-6 col-md-3"><a href="product.html" class="text-decoration-none"><div class="product-card"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&q=80" alt="Fresh Foam" class="product-img-real"></div><div class="card-body"><div class="product-name">Fresh Foam 1080</div><div class="product-brand">NEW BALANCE</div><div class="product-price">KES 12,800</div></div></div></a></div>
+      <div class="col-sm-6 col-md-3"><a href="product.html" class="text-decoration-none"><div class="product-card"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&q=80" alt="Gel Nimbus" class="product-img-real"></div><div class="card-body"><div class="product-name">Gel-Nimbus 25</div><div class="product-brand">ASICS</div><div class="product-price">KES 16,900</div></div></div></a></div>
     </div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="footer-brand">KICKS<span>KENYA</span></div>
-        <p style="font-size:0.88rem; color:rgba(255,255,255,0.55);">Nairobi's premier destination for authentic sneakers since 2019.</p>
-      </div>
-      <div class="col-6 col-md-2"><h5>Shop</h5><a href="shop.html">All Shoes</a><a href="shop.html?cat=running">Running</a><a href="shop.html?cat=lifestyle">Lifestyle</a></div>
+      <div class="col-md-4"><div class="footer-brand">KICKS<span>KENYA</span></div><p style="font-size:0.88rem;color:rgba(255,255,255,0.55);">Nairobi's premier destination for authentic sneakers since 2019.</p></div>
+      <div class="col-6 col-md-2"><h5>Shop</h5><a href="shop.html">All Shoes</a><a href="shop.html">Running</a><a href="shop.html">Lifestyle</a></div>
       <div class="col-6 col-md-2"><h5>Company</h5><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
-      <div class="col-md-4"><h5>Contact Us</h5><p style="font-size:0.88rem;"><i class="bi bi-telephone me-1" style="color:var(--primary);"></i> +254 712 345 678</p><p style="font-size:0.88rem;"><i class="bi bi-envelope me-1" style="color:var(--primary);"></i> hello@kickskenya.co.ke</p></div>
+      <div class="col-md-4"><h5>Contact</h5><p style="font-size:0.88rem;"><i class="bi bi-telephone me-1" style="color:var(--primary);"></i>+254 712 345 678</p></div>
     </div>
     <hr class="footer-divider">
-    <p class="footer-copy">&copy; 2026 Kicks Kenya. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 Kicks Kenya. All rights reserved. Made in Nairobi 🇰🇪</p>
   </div>
 </footer>
 
-<!-- Cart toast -->
-<div id="cartToast">✓ Added to cart! <a href="#" style="color:#f4a261; margin-left:0.5rem;">View cart</a></div>
-
-<a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
+<div id="cartToast">✓ Added to cart! <a href="#" style="color:#f4a261;margin-left:0.5rem;">View cart</a></div>
+<a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
 <button id="backToTop" aria-label="Back to top">↑</button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+// Real image gallery
+document.querySelectorAll('.thumb-img-real').forEach(thumb => {
+  thumb.addEventListener('click', () => {
+    document.querySelectorAll('.thumb-img-real').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+    document.getElementById('mainProductImg').src = thumb.dataset.src;
+  });
+});
+</script>
 </body>
 </html>
